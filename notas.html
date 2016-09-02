@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>NOTAS</title>
+</head>
+<body>
+   <div class="n-js">
+      <h1>de JavaScript</h1>
+      <pre>JS tiene 3 objetos prncipales:
+         document: que permite acceder y recorrer los elementos html.
+         window: que suele controlar ventanas emergentes por ejemplo.
+         navigator: hace referencia al navegador y sus propiedades, por ejemplo google analitics.
+      </pre>  
+      <p>dos formas básicas de seleccionar elementos en js es usando:
+         <pre>
+            document.getElementById()
+            document.getElementByTagName()
+         </pre>
+      ambos pertenecientes al objeto document. Pudienso seleccionarlos or su Id o por la propia etiqueta.
+      </p>
+      <h3></h3>
+      <p></p>
+   </div>
+   <!-- Separación de NOtas -->
+   <div class="n-jq">
+      <h1>de Jquery</h1>
+      <p>el objeto jquery: sintaxys $("selector correspondiente")
+         de esta forma podemos seleccionar un elemento de nuestro html
+      </p>
+            <h3>ejemplo</h3>
+      <pre>
+         //ejemplo con js
+            var el_mensaje=document.getElementById("mensaje").value;
+         //ejemplo con jquery
+            var el_mensaje=$("#mensaje").value;
+      </pre>
+
+      <h3>función ready</h3>
+      <p>permite cargar nuestro código jquery despues de que el DOM esté cargado</p>
+      <h2>Funciones Jquery para agregar contenido</h2>
+      <h3>funcion html</h3>
+      <p>sustituye un elemento de nuestro código en este caso una etiqueta html, ademas reemplaza el texto que podamos tener en nuestra web</p>
+      <p>también tenemos la propiedad innerHTML la cual sustituye el texto de un elemento</p>
+      <h3>funcion append()</h3>
+      <p>agregar un nuevo texto a continuación</p>
+      <h3>funcion prepend</h3>
+      <p>agrega un nuevo texto antes</p>
+      <h3>before y after</h3>
+      <p>funciones muy usadas en css que en jquery tienen igual propósito y funcionamiento</p>
+      <h3>funcion text()</h3>
+      <p>funciona similar a la función html con la diferencia de que no es capaz de manipular etiquetas, solo sustituye texto</p>
+   </div>
+
+
+</body>
+</html>

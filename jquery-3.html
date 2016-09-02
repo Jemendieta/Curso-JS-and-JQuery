@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Clase 3 de Jquery</title>
+   <link rel="stylesheet" href="css/other.css">
+   <script src="jquery/jquery-3.1.0.js"></script>
+   <script>
+   // ejemplos de funciones
+      // $(document).ready(function(){
+   //ejemplo1 funcion html
+         // alert($("#errores h2").html());
+   //ejemplo2 reemplazamos el texto
+      // $("#errores").html("<p>Errores en el formulario</p>");
+   //ejemplo 3 funcion append
+          // $("#errores").append("<p>Errores en el formulario</p>");
+   //ejemplo 4 funcion before
+          // $("#errores").before("<p>Errores en el formulario</p>");
+   //ejemplo 5 funcion text
+          // $("#errores h2").text("Errores en el formulario");
+
+      // });
+
+   </script>
+   <script>
+      // ejemplos practicos
+      function validar(){
+         var n_usuario=document.getElementById("usuario").value;
+         if (n_usuario==="") {
+            $("#usuario").after("rellena este campo por favor");
+         }
+      }
+
+   </script>
+</head>
+<body>
+<!-- estrutura para ejemplos de funciones -->
+   <!-- <div id="contendor">
+      <div id="errores" class="micontenedor">
+         <h2>Errores</h2>
+      </div>
+   </div> -->
+   
+<!-- estructura para ejemplos practicos -->
+   <form action="" method="get">
+      <input type="text" name="" value="" placeholder="" id="usuario"><br>
+      <input type="text" name="" value="" placeholder="" id="nombre"><br>
+      <input type="text" name="" value="" placeholder="" id="apellido"><br>
+      <input type="button" name="" value="Clic" onclick="validar()">
+
+   </form>
+
+
+
+
+<!-- NOTAS 
+   - en el ejemplo de la parte superior hacemos uso de selctores descendientes.
+   -en la segunda parte del ejemplo reeemplazamos un código ya existente hanciendo uso de la funcion html y la etiqueta p
+
+-->
+</body>
+</html>

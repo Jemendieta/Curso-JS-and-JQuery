@@ -1,0 +1,84 @@
+*{
+   box-sizing: border-box;
+   margin: 0;
+   padding: 0;
+}
+
+body{
+   background: gainsboro;
+   color: #000;
+   font-weight: bold;
+}
+
+h1, h2, h3{
+   /*font-size: 1rem;*/
+   /*border: 3px dashed tomato;*/
+   background: darkcyan;
+   color: gainsboro;
+   font-weight: bold;
+   padding: .5rem;
+   text-align: center;
+}
+
+table{
+   margin: auto;
+   /*color: "#000";*/
+
+}
+form{
+   /*background: darkcyan;*/
+   display: table;
+   text-align: center;
+   margin: auto;
+}
+ #contenedor{
+   background: darkcyan;
+   color: #fff;
+   margin:auto;
+   padding: 1rem;
+   width: 25%;
+ }
+p{
+   color: blue;
+   font-weight: bold;
+}
+
+.numero{
+   width: 60px;
+   height: 60px;
+   font-weight: bold;
+   font-size: 1rem;
+}
+.numero:hover{
+   background: teal;
+   color: #fff;
+   font-weight: bold;
+}
+
+.igual{
+   width: 120px;
+   height: 60px;
+}
+.color_display{
+   height: 30px;
+   background:teal;
+   border: medium #0f0;
+   font: "space Age";
+   color: #fff;
+   font-size: 18px;
+   text-align: right;
+   padding: 5px;
+   
+
+}
+.igual:hover{
+   background: teal;
+   color: #fff;
+   font-weight: bold;
+}
+#button, #button2, #button3, #button4{
+   /*width: 65px;*/
+}
+table{
+   border: 2px solid teal;
+}

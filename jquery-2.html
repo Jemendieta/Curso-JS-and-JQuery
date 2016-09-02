@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Iniciando con Jquery segunda parte</title>
+   <style type="text/css" media="screen">
+
+      #anuncio{
+         background: teal;
+         color: #fff;
+         font-weight: bold;
+         text-align: center;
+         font-size: 24px;
+      }
+
+   </style>
+   <!-- <script src="jquery/jquery-3.1.0.js"></script> -->
+   <script src="jquery/jquery-3.1.0.js"></script>
+
+   <!-- ejemplo usando jquery-->
+   <script>
+      $(document).ready(function(){
+         $("#anuncio")
+         .width(400)
+         .height(400)
+         .text("¡Vende...!")
+         .hide()
+         .fadeIn(10000);
+
+      });
+      // la forma de ordenar tu código es meramente personal como el ejemplo de la parte superior
+   </script>
+
+</head>
+
+<body>
+   <div id="anuncio">
+      ¡Compra!
+   </div>
+
+   <!-- ejemplo 1 con js tradicional
+         con este ejem´plo manipulamos el contenido de nuestro div anuncio desde ccódigo js
+   -->
+  <!--  <script>
+      var anuncio=document.getElementById("anuncio");
+      anuncio.style.width="350px";
+      anuncio.style.height="350px";
+      anuncio.innerHTML="¡vende!";
+   </script> -->
+
+
+</body>
+</html>

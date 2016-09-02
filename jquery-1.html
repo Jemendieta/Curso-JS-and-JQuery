@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+   <title>Iniciando con JQuery</title>
+   <link rel="stylesheet" type="text/css" href="css/main.css">
+   <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.0.js"></script>
+
+   <!-- primer ejemplo con jquery loop automatico
+      el siguiente bloque de código pone a la espera esa declaración hasta que se cargue nuestro html
+      y una ves logrado eso se ejecuta.
+   -->
+   <script>
+      $(document).ready(function(){//llamamos a la funcion ready
+         $("#carrete img").hide();//seleccionamos nuestro id y lo ocultamos con la funcion hide
+      });
+   </script>
+   <!-- como vemos las líneas de código se reducen notablemente en comparación al ejemplo con js -->
+
+</head>
+<body>
+   <h1>Iniciando con JQuery</h1>
+   <br>
+   <hr>
+   <br>
+   <div id="carrete">
+      <img src="http://lorempixel.com/400/200" alt="" width="250" height="175">
+      <img src="http://lorempixel.com/400/200" alt="" width="250" height="175">
+      <img src="http://lorempixel.com/400/200" alt="" width="250" height="175">
+      <img src="http://lorempixel.com/400/200" alt="" width="250" height="175">
+   </div>
+
+   <!-- ejemplo 1 con js-->
+   <!-- <script>
+
+      var imagenes=document.querySelectorAll("#carrete img");//selecionamos todas nuestras imagenes
+
+      for (var i = 0; i < imagenes.length; i++) {
+      imagenes[i].style.visibility="hidden";
+      }//con este for recorremos nuestro array y ocultamos las imagenes
+   </script> -->
+   <!--el metodo querySelectorAll permite selecionar todas las etiquetas que se encuentren dentro del paréntesis, al hacer esto la variable declarada se convierte en un array -->
+
+</body>
+</html>
