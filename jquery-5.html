@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Cambiando Atributos</title>
+   <style>
+      .linkdestacacursos{
+         /*background: gold;*/
+         color: teal;
+         font-weight: bold;
+         margin-left: 25px;
+      }
+      .linkdestacainformacion{
+         /*background: gold;*/
+         color: gold;
+         font-weight: bold;
+         margin-left: 25px;
+      }
+      a{
+         display: block;
+         margin-bottom: 20px;
+         font-size: 24px;
+      }
+      table{
+         text-align: center;
+         border: none;
+      }
+      td{
+         border: none;
+      }
+      #contieneenlaces{
+         position: absolute;
+         left: 31px;
+         top: 65px;
+         width: 400px;
+         height: 649px;
+         z-index: 1;
+         padding-top: 100px;
+      }
+   </style>
+
+   <script src="jquery/jquery-3.1.0.js"></script>
+<!-- ejemplo usando addClass, removeClass y toggleClas-->
+   <script type="text/javascript">
+      $(document).ready(function(){
+         // $("a[href^='https://']").addClass("linkdestacacursos");
+// ejemplo cuando se hace click en el boton cursos
+         document.getElementById("cursos").addEventListener("click", resaltacursos, false);
+
+// ejemplo cuando se hace click en el boton información
+         document.getElementById("informacion").addEventListener("click",resaltaejemplos, false);
+      });
+
+// ahora creamos la funcion resaltacursos
+      function resaltacursos(){
+   //primera forma con radiobutton
+         
+         $(".ejemplos").removeClass("linkdestacacursos");
+         $(".cursos").addClass("linkdestacainformacion");
+         
+   // segunda forma con checkbox
+         // $(".cursos").toggleClass("linkdestacacursos");
+      }
+// funcion para resaltar ejemplos
+     function resaltaejemplos(){
+   //primera forma con radio button
+         
+         $(".cursos").removeClass("linkdestacainformacion");
+         $(".ejemplos").addClass("linkdestacacursos");
+         
+   // segunda forma con checkbox
+         // $(".ejemplos").toggleClass("linkdestacainformacion");
+      }
+
+   </script>
+
+</head>
+
+<body>
+   <div id="contieneenlaces">
+      <a href="http://www.pildorasinformaticas.com" target="_blank" class="cursos">Píldoras Informáticas</a><br>
+      <a href="http://www.google.com" target="_blank" class="ejemplos">Google</a><br>
+      <a href="https://www.youtube.com" target="_blank" class="cursos">Cursos Youtube</a><br>
+      <a href="jquery-4.html" target="_blank">Remover y Reemplazar</a><br>
+      <a href="https://www.news.google.com" target="_blank" class="ejemplos">Noticias Google</a><br>
+      <a href="calculadora.html" target="_blank">Calculadora</a>
+   </div>
+
+   <table width="100%" border="1">
+      <tr>
+         <td>
+            Cursos Destacados&nbsp;&nbsp;<input type="radio" name="boton" value="cursos" id="cursos">
+         </td>
+         <td>
+            Información Adicional&nbsp;&nbsp;<input type="radio" name="boton" value="informacion" id="informacion">
+         </td>
+
+      </tr>
+   </table>
+
+</body>
+</html>
