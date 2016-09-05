@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Leyendo y cambiando atributos con la función css</title>
+   <style media="screen">
+      #primer_parrafo{
+         background: teal;
+      }
+   </style>
+
+   <script type="text/javascript" src="jquery/jquery-3.1.0.js"></script>
+   <script type="text/javascript">
+//en este primer ejemplo capturamos el valor de una propiedad y cambiamos su color
+      $(document).ready(function(){
+         // $("#primer_parrafo").css("background","#00f");
+         $("p.destacado").css("border","2px dotted teal");
+      })
+
+   </script>
+</head>
+<body>
+   <p id="primer_parrafo">Primér párrafo</p>
+   <p class="destacado">segundo párrafo</p>
+   <p>tercer párrafo</p>
+
+</body>
+</html>
