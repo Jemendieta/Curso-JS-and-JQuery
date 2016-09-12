@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Trabajando con funciones each y funciones anónimas</title>
+   <style type="text/css">
+      *{
+         margin: 0;
+         box-sizing: border-box;
+      }
+      img{
+         margin:o 20px;
+      }
+      #contenedor{
+         width: 80%;
+         margin: auto;
+
+      }
+      #miboton{
+         background: teal;
+         color: #fff;
+         font-weight: bold;
+         font-size: 22px;
+      }
+      #boton{
+         width: 100px;
+         margin: 0 auto;         
+      }
+   </style>
+
+   <script type="text/javascript" src="jquery/jquery-3.1.0.js"></script>
+   <script type="text/javascript">
+   // FORMA UNO 
+      $(document).ready(function(){
+         document.getElementById("miboton").addEventListener("click", cambiar, false);
+      });
+
+      // function cambiar(){
+      //    $("img").fadeOut(1500).fadeIn(1500).width("450");
+      // }
+   // Forma dos con funciones encadenadas
+      function cambiar(){
+         $("img").each(function(){
+            $(this).fadeOut(1000).fadeIn(1000).width("450");
+         });
+      }
+
+      
+   </script>
+</head>
+<body>
+   <div id="contenedor">
+      <img src="img/img1.jpg" alt="">
+      <img src="img/img2.jpg" alt="">
+      <img src="img/img3.jpg" alt="">
+      <img src="img/img4.jpg" alt="">
+   </div>
+   <div id="boton">
+      <input type="button" name="" value="Acción" id="miboton">
+   </div>
+      
+
+
+
+
+<!-- NOTAS
+
+   las funciones anónimas y la función each suelen usarse mucho cuando se busca aplicar varias tareas a un mismo objeto pero sobre todo cuando estas tareas implican declaración de variables, bucles o condicionales, etc.
+
+-->
+</body>
+</html>
