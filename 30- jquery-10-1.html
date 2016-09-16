@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Eventos en javascript con jquery parte uno</title>
+
+   <style media="screen">
+      body{
+         background: #334873;
+         color: #fff;
+      }
+      h1{
+         text-align: center;
+      }
+      #principal{
+         width: 60%;
+         margin: auto;
+      }
+      a{
+         color: #fff;
+         font: bold 20px verdana, arial, sans-serif;
+      }
+   </style>
+   <script type="text/javascript" src="jquery/jquery-3.1.0.js">
+   </script>
+   <script type="text/javascript">
+// código js y jquery
+      $(document).ready(function(){
+         $("html").dblclick(function(){
+            alert("Hola...!");
+         });
+         $("a").mouseover(function(){
+            var mensaje="<p>Estás pasando el mouse por encima del link</p>";
+            $("#principal").append(mensaje);
+         });
+         $("#el_boton").click(function(){
+            $(this).val("nuevo nombre");
+         });
+         $("#el_campo").focus(function(){
+            $(this).val("Ahora escribe aquí");
+         });
+      });
+   </script>
+</head>
+<body>
+   <div id="principal">
+      <h1>Introducción a Eventos</h1>
+      <p><a href="#">Un link</a></p>
+      <form action="#" method="get">
+      <fieldset><legend>Formulario</legend><p>
+         <input type="button" name="button" value="Boton" id="el_boton"></p>
+         <p><input type="text" name="textfield" id="el_campo"></p>
+      </fieldset>
+      </form>
+   </div>
+
+
+
+<!-- NOTAS
+
+   -la función "val" permite acceder al value de un elemento y modificarlo.
+   -la función "dblclick" se ejecuta cuando hacemos doble clic sobre algún elemento.
+   -la función "append" permite agregar texto a un elemento como se ve en nuestro ejemplo de la parte superior.
+   - la función "focus" permite identificar un elemento de nuestro sitio sobre el cual esté el foco, es decir, el elemento que esté seleccionado.
+-->
+</body>
+</html>

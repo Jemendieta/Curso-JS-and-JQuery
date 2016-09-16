@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title>Eventos con jquery en javascript parte dos - Hover()</title>
+   <style type="text/css">
+      #imagenes{
+         width: 1275px;
+         margin: auto;
+      }
+      img{
+         padding: 20px 5px;
+      }
+      #mensaje_img1{
+         position: absolute;
+         left: 353px;
+         top: 292px;
+         width: 581px;
+         height: 215px;
+         background: #ff9;
+         font-size: 24px;
+         font-weight: bold;
+         padding: 25px;
+         border: dotted 2px #00f;
+      }
+   </style>
+
+   <script type="text/javascript" src="jquery/jquery-3.1.0.js"></script>
+   
+   <script type="text/javascript">
+      $(document).ready(function(){
+// ocultaremos nuestro mensaje
+         $("#mensaje_img1").hide();
+// para funciones separadas
+         // $("#imagen1").hover(mensaje_on, mensaje_off);
+// con funciones anónimas
+         $("#imagen1").hover(function(){
+            $("#mensaje_img1").show();
+
+         }, function(){
+            $("#mensaje_img1").hide();
+         });
+      });
+
+// con funciones separadas
+      // function mensaje_on(){
+      //    $("#mensaje_img1").show();
+      // }
+
+      // function mensaje_off(){
+      //    $("#mensaje_img1").hide();
+      // }
+
+
+   </script>
+</head>
+<body>
+   <div id="mensaje_img1">
+      <p>la imagen sobre la cual tienes el mouse es el la uno con el árbol de la vida...</p>
+   </div>
+   <div id="imagenes">
+      <img src="img/other/1.jpg" id="imagen1">
+      <img src="img/other/2.jpg" id="imagen2">
+      <img src="img/other/3.jpg" id="imagen3">
+      <img src="img/other/4.jpg" id="imagen4">
+   </div>
+
+
+<!-- NOTAS
+
+-la función hide coculta un elemento
+-en este ejemplo, los dos parámetros que recive hover son funciones que se ejecutarán cuando se pase o quite el ratos del elemento seleccinado
+-la funcion show() muestra un elemento
+
+
+-->
+</body>
+</html>
