@@ -1,0 +1,27 @@
+/*estilos de ejemplo 42 de ventanas emergentes e iframes*/
+
+body {
+    background: teal;
+    color: #fff;
+}
+
+h1 {
+    text-align: center;
+    font-weight: bold;
+    border: 2.5px dashed #fff;
+}
+
+table {
+    width: 25%;
+}
+
+form {
+    border: 1px dashed #fff;
+    display: table;
+}
+
+a {
+    color: gold;
+    font-weight: bold;
+    font-size: 20px;
+}

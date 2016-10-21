@@ -1,0 +1,12 @@
+/*estilos de nuestros ejemplos de preloader y rollover*/
+
+h1 {
+    /*text-align: center;*/
+    border: 2px dotted teal;
+    display: table;
+    margin: auto;
+    margin-bottom: 1rem;
+    padding: 2px;
+    color: teal;
+    
+}
