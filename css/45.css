@@ -1,0 +1,30 @@
+#principal{
+   
+   padding:10px 10px 10px 50px;
+   margin-top: 15px;
+   background-color:teal;  
+   box-shadow: 10px 10px 5px 0px #999999;
+   border-radius: 10px;
+   color: #fff;
+}
+td{
+   padding-bottom:10px;
+}
+
+body{
+   background: gainsboro;
+}
+h1{
+   text-align: center;
+   color: teal;
+}
+#comprobar{
+   background-color: gold;
+   color: #000;
+   font-weight: bold;
+}
+#n_tarjeta, #tarjeta, #f_tarjeta, #fecha_tarjeta, #e_mail,#email{
+   /*background-color: teal;
+   border-style: groove;*/
+   visibility: hidden;
+}

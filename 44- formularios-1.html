@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Formularios con js</title>
+    <link rel="stylesheet" type="text/css" href="css/44.css">
+    <script type="text/javascript" src="jquery/jquery-3.1.0.js"></script>
+    <script type="text/javascript" src="js/44.js"></script>
+</head>
+
+<body>
+    <h1>Trabajando con formularios</h1>
+    <form id="form_datos">
+      <table width="20%" border="0" align="center" id="principal">
+        <tr>
+          <td>Nombre:</td>
+          <td><label for="nombre"></label>
+            <input type="text" name="nombre" id="nombre" placeholder="Campo obligatorio"></td>
+        </tr>
+        <tr>
+          <td>Apellido:</td>
+          <td><input type="text" name="apellido" id="apellido"></td>
+        </tr>
+        <tr>
+          <td>Edad:</td>
+          <td><input type="text" name="uedad" id="edad"></td>
+        </tr>
+        <tr>
+          <td>Género:</td>
+          <td><p>
+            <label>
+              <input type="radio" name="genero" value="Masculino" id="masculino">
+              masculino</label>
+            <br>
+            <label>
+              <input type="radio" name="genero" value="Femenino" id="femenino">
+              femenino</label>
+            <br>
+          </p></td>
+        </tr>
+        <tr>
+          <td>País:</td>
+          <td><label for="pais"></label>
+            <select name="pais" id="pais">
+              <option>España</option>
+              <option>México</option>
+              <option>Colombia</option>
+              <option>Perú</option>
+              <option>Chile</option>
+              <option>Argentina</option>
+            </select></td>
+        </tr>
+        <tr>
+          <td>Aficiones:</td>
+          <td><table width="200">
+            <tr>
+              <td><label>
+                <input type="checkbox" name="deporte" value="Deporte" id="deporte">
+                deporte</label></td>
+              <td><label>
+                <input type="checkbox" name="informatica" value="Informática" id="informatica">
+                informatica</label></td>
+            </tr>
+            <tr>
+              <td><label>
+                <input type="checkbox" name="lectura" value="Lectura" id="lectura">
+                lectura</label></td>
+              <td><label>
+                <input type="checkbox" name="cine" value="Cine" id="cine">
+                cine</label></td>
+            </tr>
+            <tr>
+              <td><label>
+                <input type="checkbox" name="bares" value="Bares" id="bares">
+                bares</label></td>
+              <td><label>
+                <input type="checkbox" name="naturaleza" value="Naturaleza" id="naturaleza">
+                Naturaleza</label></td>
+            </tr>
+
+          </table></td>
+        </tr>
+        <tr>
+        <td colspan="2" align="center"><input type="submit" value="enviar" id="comprobar"></td>
+
+        </tr>
+      </table>
+    </form>
+    <div id="las_aficiones">
+      
+    </div>
+
+      <!-- los botones de tipo button son incapaces de enviar información debido a lo cual se debe cambiar el type a submit -->
+
+</body>
+
+</html>

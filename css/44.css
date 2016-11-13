@@ -1,0 +1,25 @@
+body{
+   background: gainsboro;
+}
+h1{
+   text-align: center;
+   color: teal;
+}
+#form_datos{
+   background-color: teal;
+   color: #fff;
+   height: 400px;
+   margin: auto;
+   width: 370px;
+   box-shadow: 5px 5px 5px #000;
+}
+#comprobar{
+   font-weight: bold;
+   background: gold;
+   color: #000;
+   border-radius: 5px;
+}
+#las_aficiones{
+   color: teal;
+   font-weight: bold;
+}
